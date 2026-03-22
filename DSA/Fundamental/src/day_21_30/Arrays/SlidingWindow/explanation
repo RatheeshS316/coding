@@ -1,0 +1,120 @@
+🔹 Definition (What is Sliding Window?)
+                Sliding Window is a technique used to process a continuous part (subarray / substring)
+                 of fixed or variable size without recalculating everything again.
+
+            👉 Instead of calculating sum again and again,
+            👉 We remove one element and add one element when the window moves.
+
+Short definition:
+            Sliding Window means maintaining a window of elements and sliding it forward by adding the next element and
+            removing the previous one.
+
+Explanation (With your example)
+    Given:
+    plates = {120, 100, 110, 90, 130}
+    k = 3
+
+Step 1: First window
+        [120, 100, 110] → sum = 330
+
+Step 2: Slide the window
+
+        Remove left, add right 👇
+
+        [100, 110, 90] → sum = 300
+        [110, 90, 130] → sum = 330
+
+
+        👉 We are not recalculating full sum
+        👉 We only adjust the sum
+
+        That is sliding window 💡
+
+🔹 Why Sliding Window is used?
+            Because problems like:
+
+            Maximum / minimum sum
+
+            Continuous subarray
+
+            Fixed range problems
+
+            can be solved faster using sliding window.
+
+🔹 Advantages ✅
+                1  Time Efficient (Fast)
+
+                Normal way → O(n²)
+
+                Sliding Window → O(n) 🚀
+
+                👉 Best for large inputs
+
+                2️⃣ No Recalculation
+
+                Old value remove
+
+                New value add
+
+                👉 Less CPU work
+
+                3️⃣ Easy to Optimize Code
+
+                Clean logic
+
+                Less loops
+
+                4️⃣ Frequently Asked in Interviews
+
+                Amazon
+
+                Google
+
+                Microsoft
+
+                Flipkart
+
+                👉 Very important DSA concept````
+
+🔹 Disadvantages ❌
+            1  Only works for continuous data
+
+            Subarray
+
+            Substring
+
+            ❌ Cannot be used for random elements
+
+            2️⃣ Not suitable for all problems
+
+            Some problems need backtracking
+
+            Some need DP
+
+            3️⃣ Confusing for beginners
+
+            i - k
+
+            remove + add logic
+
+            👉 First time paakumbodhu confusion varum 😅
+
+            4️⃣ Window size dependency
+
+            Fixed window → easy
+
+            Variable window → little tricky
+
+            🔹 Where Sliding Window is used? (Examples)
+
+            Maximum sum of K elements
+
+            Longest substring without repeating characters
+
+            Average of subarrays
+
+            Rainwater trapping (with variations)``
+
+🔹 One-line summary 🧠
+
+Sliding Window = Fast way to solve continuous range problems by moving a window instead of recalculating

@@ -1,0 +1,40 @@
+@use 'sass:math';
+/* it is used to import sass's built in math module so that you can use advanced math functions
+ (like divisions ,rounding,constants, like pi etc) in  your stylesheets                  */
+
+h1{
+    color:$primary;
+    background-color: $secondary;
+    font-size: $font-size-lg;
+}
+
+
+a{
+    color:$tertiary;
+    font-size:$font-size-sm;
+    background-color:$info;
+}
+
+button{
+    background-color: $secondary;
+    padding:$size-padding;
+    color:black;
+    border:2px solid $secondary;
+}
+
+div{
+    color:$primary;
+    border:$border-radius*4;   
+    
+    // border: $border-radius/4;   it is wrong it throws the error  incase use border:Math.div($border-radius,4);
+    border-radius:math.div($border-radius,4);
+    border:$size-border;
+}
+
+.btn{
+    color:map-get($colors,"primary");
+    background-color: map-get($colors,"secondary");
+}
+
+
+

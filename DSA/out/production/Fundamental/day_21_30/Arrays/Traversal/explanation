@@ -1,0 +1,10 @@
+Array Traversal – Definition
+                Array traversal means accessing (visiting) each element of an array one by one,
+                usually using a loop, to read, print, update, or process the values stored in the array.
+
+    📌 Why array traversal is used?
+                            Print elements
+                            Search an element
+                            Update values
+                            Calculate sum / average
+                            Perform sorting

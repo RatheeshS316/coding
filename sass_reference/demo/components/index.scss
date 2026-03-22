@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// variables & functions
+@import 'variable';
+
+// base & layouts
+@import 'base';
+@import 'media';
+
+// colors 
+@import 'colors';
+
+// components (buttons,card,navbar)
+@import 'demo/card';
+@import 'demo/button';
+
+// utilities (margin, padding,opacity)
+@import 'function';
+@import 'utilities';
+
+
+
+//m-4 pl-3 0-4
+
+
+//@import 'base';
+//@import 'variable';    ipdi order mathi potaa value display aagama irukum en na 'base.scss'  variable.scss aah depend panni iruku 
+
+
+
+

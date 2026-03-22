@@ -1,0 +1,28 @@
+Destructuring na:
+“Object la irunthu values ah separate variable ah easy ah eduthukkara shortcut syntax.”
+
+
+useState: 
+  * it is used to change one value into another value with getting reload 
+  * Oru variable (state) create panna help pannum.
+  * Value change pannumbodhu, React component re-render aagum → UI update aagum.
+    
+
+useRef:
+   suppose the value is change into another value the page will not reload. it is very important 
+
+
+useEffect();
+React la oru hook.
+👉 Purpose: Side effects handle panna.
+
+
+useMemo():
+      there are two values in the function number and dark . number mattum change aagi dark value not change old value apdiyae store aaidum uneccessary calcuation nadakadhu
+      Number (count) change aana podhu → recompute aagum (new result varum).
+      Dark (theme) change aana podhu → recompute aagadhu, cache la irundha old number value thaan use pannidum.
+      So unnecessary ah expensive calculation run aagadhu → app fast ah irukum.
+
+
+usecallback:
+      enna na rendu function la onnu change aagudu na innoru function apdiyae value store aagi render aagama irukum is it correct

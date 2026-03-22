@@ -1,0 +1,81 @@
+@mixin button(){
+    padding:5px;
+    margin:10px;
+    border: $size-border $primary solid;
+    border-radius: 25px;
+}
+
+.button1{
+    @include button();
+    color:green;
+    background-color:aqua;
+}
+
+.button2{
+    @include button();
+    color:purple;
+    background-color:orangered;
+}
+
+
+// idhu inheritance mari , button ulla value button1,button2 la inherit aagi iruku
+
+
+//method
+@mixin all($bac-ground){
+    color:saddlebrown;
+    background-color: $bac-ground;
+} 
+
+@each $key ,$val in $colors{
+    .text-#{key}{
+        @include button($val);
+    }
+
+    .text-outline-#{$key}{
+        @include button(white);
+        border: $size-border solid $val ;
+    }
+}
+
+//method with overwriting
+@mixin all($bac-ground){
+    color:saddlebrown;
+    background-color: $bac-ground;
+} 
+
+@each $key ,$val in $colors{
+    .text-#{key}{
+        @include button($val);
+    }
+
+    .text-outline-#{$key}{
+        @include button(white);
+        border: $size-border solid $val ;
+    }
+}
+
+
+
+
+@mixin all($bac-ground){
+    color:saddlebrown;
+    background-color: $bac-ground;
+} 
+
+@each $key ,$val in $colors{
+    .text-#{key}{
+        @include button($val);
+        &:hover{
+            color:lighten($val,4);
+        }
+    }
+
+    .text-outline-#{$key}{
+        @include button(white);
+        border: $size-border solid $val ;
+        &:hover{
+            color:$bac-ground;
+        }
+    }
+}

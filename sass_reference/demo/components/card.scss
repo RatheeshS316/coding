@@ -1,0 +1,33 @@
+// nested rules
+
+
+.card{
+    display:block;
+    padding:$size-padding;
+    border:$size-border;
+    border-radius: $border-radius*3;
+    box-shadow: $box-shadow;
+
+
+.card-title {
+    font-size:$font-size;
+    padding-bottom:$size-padding;
+    font-style: bold;
+
+}
+
+.card-body{
+    font-size:$font-size*2;
+
+    a{
+        text-decoration: underline;
+    }
+}
+}
+
+// @debug plays a print role in terminal 
+@debug "hello world";                        //DEBUG : hello world
+@debug math.div(10,3);                       //DEBUG: 3.33333333333
+@debug math.floor(2.6);                      //DEBUG : 2
+@debug math.max(12px,11px,22px,1px);        //DEBUG : 22px
+@debug math.min(12pxx11px,22px,1px);        //DEBUG: 1px

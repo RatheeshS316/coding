@@ -1,0 +1,38 @@
+                 // compile time error
+
+public class Exception_handling {
+
+    public static void main(String[] args) {
+
+      int a =20
+        System.out.println(a);       // semicolon podadha nala idhu compile time error.
+
+    }
+}
+
+                Runtime Error
+
+        import java.util.Scanner;
+        public class Exception_handling {
+
+            public static void main(String[] args) {
+
+             Scanner scan = new Scanner(System.in);
+             int number = scan.nextInt();
+
+            }
+        }
+
+o/p:
+
+    input:stri
+   it show run time error because of the string
+
+
+   types:
+
+  * ArithmeticException
+  * NullPointerException
+  * IllegalArgumentException
+  * NumberFormatException
+  * ArrayIndexOutOfBoundsException

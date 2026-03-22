@@ -1,0 +1,22 @@
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:teal;
+    color:white;
+    
+}
+nav ul{
+    display:flex;
+    list-style-type: none;
+    cursor:pointer;
+   
+}
+nav li{
+     padding-right: 10px;
+     
+}
+nav li:hover{
+    cursor:pointer;
+}

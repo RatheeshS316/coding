@@ -1,0 +1,18 @@
+pwd
+ls
+ls -l -h
+ls -l -h    --block-size=KB
+clear
+Man --ls
+Man -ls
+sudo apt install man
+man ls
+sudo apt install man
+man ls
+date
+whoami
+history
+whoami
+history
+date
+cat  .bash_history

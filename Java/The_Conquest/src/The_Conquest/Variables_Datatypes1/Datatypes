@@ -1,0 +1,16 @@
+Datatypes:
+        there are two types
+        1.Primitive Datatype
+                        * byte
+                        * short
+                        * int
+                        * long
+                        * float
+                        * double
+                        * boolean
+                        * char
+
+        2.Reference/Data Object Types
+                        * String
+                        * Array
+                        * Class Objects

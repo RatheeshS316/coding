@@ -1,0 +1,53 @@
+// theme colors
+$primary:red;
+$secondary:blue;
+$tertiary:green;
+$info:purple;
+
+//color palette
+//maps nu solluvaga
+$colors:(
+    "primary":$primary,
+    "secondary":$secondary
+    "tertiary":$tertiary,
+    "info":$info,
+    "black":black,
+    "red":red,
+    "blue":blue,
+    "yellow":yellow,
+    );
+
+       
+    // bracket la (key , keyValue) 
+     @debug map-get($colors,"red");         // terminal   DEBUG:red
+     @debug map-get($colors,"secondary");   // terminal   DEBUG:blue
+
+     @debug map-has-key($colors,"primary"); // terminal   DEBUG:true
+     @debug map-has-key($colors,"error");   // terminal   DEBUG:false
+
+     @debug map-remove($map: $colors, $keys:"red" );            // terminal  DEBUG:( "primary":$primary,"secondary":$secondary,"tertiary":$tertiary,"info":$info,"black":black,"blue":blue,"yellow":yellow)
+     @debug map-merge($map : $colors , ("orange":orange));    // terminal DEBUG:( "primary":$primary,"secondary":$secondary,"tertiary":$tertiary,"info":$info,"black":black,"blue":blue,"yellow":yellow ,"orange":orange)
+
+
+
+// size & thickness
+$size-padding:1rem;
+$size-margin:12px;
+
+//borders
+$size-border:5px;
+$border-radius:1rem;
+
+//thickness
+$thickness:8px;
+
+
+// box-shadow
+$box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+//font-size
+$font-size:1rem;
+$font-size-sm: $font-size*0.75;
+$font-size-lg:$font-size*1.5;
+$font-size-xl:$font-size*2.5;
+$font-size-xxl:$font-size*3.5;

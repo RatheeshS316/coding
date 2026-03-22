@@ -1,0 +1,68 @@
+$media :(
+    "s":0,
+    "m":600px,
+    "l":800px,
+    "xl":1200px,
+);
+
+@mixin s{
+    @media (min-width:map-get(Smedia , "s")){
+        @content;
+    }
+}
+
+@mixin m{
+    @media (min-width:map-get($media , "m")){
+        @content;
+    }
+}
+
+@mixin l{
+    @media (min-width:map-get($media , "l")){
+        @content;
+    }
+}
+
+@mixin xl{
+    @media (min-width:map-get($media , "xl")){
+        @content;
+    }
+}
+
+@mixin media($m){
+    @media (min-width:$m){
+        @content;
+    }
+}
+
+
+.responsive-test{
+@include s{
+    color:red;
+    font-size:1rem;
+}
+
+@include m{
+    color:blue;
+    font-size:2rem
+}
+
+@include l{
+    color:yellow;
+    font-size:2rem
+}
+
+@include xl{
+    color:green;
+    font-size:2rem
+}
+
+@include media{
+    color:purple;
+    font-size:2rem
+}
+
+}
+
+
+// <h1  class = "responsive-test"> changing colors</h1>

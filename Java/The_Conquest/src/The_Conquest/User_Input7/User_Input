@@ -1,0 +1,28 @@
+   import java.lang.System;  // Default aahavae stor aagirukum.  adunala podanum nu avasiyam illa
+
+ package The_Conquest.User_Input7;
+
+ public static void main(String[] args) {
+        int a=111,b=23;
+        int c = a + b;
+        System.out.println(c);
+        }
+        }
+
+ working:
+
+ 1. "System.out.println(c);" System terminal la link aagi ruku
+ 2. import java.lang.System; , code to terminal ku wrok aavudu
+
+ Here's a breakdown of commonly used Scanner methods based on data type:
+
+ Data Type	       Method in Scanner	   Example Usage
+ int	           nextInt()	           int a = scanner.nextInt();
+ float	           nextFloat()	           float f = scanner.nextFloat();
+ double            nextDouble()	           double d = scanner.nextDouble();
+ long           	nextLong()	           long l = scanner.nextLong();
+ short          	nextShort()	            short s = scanner.nextShort();
+ byte	            nextByte()	            byte b = scanner.nextByte();
+ boolean	        nextBoolean()	       boolean flag = scanner.nextBoolean();
+ String (word)	    next()	                String s = scanner.next();
+ String (line)     	nextLine()	            String line = scanner.nextLine();

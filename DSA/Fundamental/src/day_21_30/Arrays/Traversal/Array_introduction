@@ -1,0 +1,82 @@
+### 📘 **Array – Introduction in DSA**
+
+### 🔹 What is an Array?
+            An **array** is a **linear data structure** used to store **multiple values of the same data type**
+            in a **continuous memory location**.
+
+---
+
+### 🔹 Simple definition (Exam-friendly)
+        > **An array is a data structure that stores elements of the same type in contiguous memory locations
+         and can be accessed using index values.**
+
+---
+
+### 🔹 Example (Java)
+
+```java
+int[] arr = {10, 20, 30, 40};
+```
+
+        | Index | Value |
+        | ----- | ----- |
+        | 0     | 10    |
+        | 1     | 20    |
+        | 2     | 30    |
+        | 3     | 40    |
+
+        ---
+
+### 🔹 Key Characteristics of Array
+
+1. **Fixed size** – size once define panninaa change panna mudiyadhu
+2. **Same data type** – int array → only int values
+3. **Indexed access** – elements access panna index use pannuvom
+4. **Fast access** – O(1) time complexity
+
+---
+
+### 🔹 Types of Arrays
+
+1. **1D Array** – `int[] arr`
+2. **2D Array** – `int[][] matrix`
+3. **Multi-Dimensional Array**
+
+---
+
+### 🔹 Why Arrays are important in DSA?
+
+* Base for **stack, queue, heap**
+* Used in **searching & sorting**
+* Improves **memory efficiency**
+* Easy and fast data access
+
+---
+
+### 🔹 Real-life example 🧠
+
+**Student marks list**
+
+```
+Marks = [85, 90, 78, 88]
+```
+
+Each mark has an index → easy access.
+
+---
+
+### 🔹 Advantages
+
+✔ Fast access
+✔ Simple structure
+✔ Efficient memory usage
+
+---
+
+### 🔹 Disadvantages
+
+❌ Fixed size
+❌ Insertion & deletion costly
+❌ Same data type only
+
+---

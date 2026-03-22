@@ -1,0 +1,126 @@
+//loops
+
+
+@each $key,$val in $colors{
+    .text-#{key}{
+        color:$val;
+    }
+    .bg-color-#{key}{
+        color:$val;
+    }
+
+
+    //for loop in sass
+   @for $i from 1 through 9{
+    
+    //light variations
+    .text-#{$key}-.light-#{$i}{
+        color:mix(white,$val,i*10);
+    }
+    // dark variations
+    .bg-color-#{$key}-.dark-#{$i}{
+        background-color:mix(black,$val,i*10);
+    }
+   }
+}
+
+
+/*  if conditions
+ 
+  ex1
+
+    @if(10 > 5){
+    .test-if{
+    color:white;
+    background-color:red;
+    }
+} 
+    @else{
+    .test-if{
+    color:white;
+    background-color:blue;
+        }
+    }
+
+
+  ex2
+    $bg-color: red;
+
+    @if $bg-color == red {
+    .test-if {
+        background-color: red;
+    }
+    } @else {
+    .test-if {
+        background-color: blue;
+    }
+    }
+
+
+    ex3
+        // theme colors
+            $primary:red;
+            $secondary:blue;
+            $tertiary:green;
+            $info:purple;
+
+            //color palette
+            $colors:(
+                "primary":$primary,
+                "secondary":$secondary
+                "tertiary":$tertiary,
+                "info":$info,
+                "black":black,
+                "red":red,
+                "blue":blue,
+                "yellow":yellow,
+                );
+
+
+                @if( $val != black and $val != yellow){
+            @for $i from 1 through 9{
+                
+                //light variations
+                .text-#{$key}-.light-#{$i}{
+                    color:mix(white,$val,i*10);
+                }
+                // dark variations
+                .bg-color-#{$key}-.dark-#{$i}{
+                    background-color:mix(black,$val,i*10);
+                }
+            }
+            }
+            }
+
+            yellow and black print aagadhu 
+
+  */          
+
+
+
+                        /* parent selector &
+
+                            html file
+                            <div class="button">button</div>
+                            */
+          .button{
+            width:100px;
+            height:100px;
+            background-color:red ;
+            color:white;
+
+            &:hover{
+                color:blue;
+                background-color: white;
+            }
+
+            &:nth-child(2){
+                color:green;
+                background-color:white;
+            }
+            &:last-child{
+                color:purple;
+                background-color:white;
+            }
+          }                  
+    

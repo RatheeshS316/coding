@@ -1,0 +1,191 @@
+
+🟦 TypeScript Learning Roadmap (with code)
+    
+    1. Basics
+
+        Variables & Types
+
+        let age: number = 25;
+        let name: string = "Ratheesh";
+        let isAdmin: boolean = true;
+
+
+        Arrays & Tuples
+
+        let numbers: number[] = [1, 2, 3];
+        let person: [string, number] = ["Ravi", 30]; // tuple
+
+
+        Enums
+
+        enum Direction {
+                            Up,
+                            Down,
+                            Left,
+                            Right
+                       }
+        let move: Direction = Direction.Up;
+
+
+
+
+    2. Functions
+
+        Normal Functions
+
+        function add(a: number, b: number): number {
+        return a + b;
+        }
+
+
+        Arrow Functions
+
+        const multiply = (x: number, y: number): number => x * y;
+
+
+        Optional & Default Params
+
+        function greet(name: string, age?: number): string {
+        return `Hello ${name}, age: ${age ?? "unknown"}`;
+        }
+
+
+
+    3. Objects & Interfaces
+
+        Interfaces
+
+        interface User {
+        id: number;
+        name: string;
+        isActive: boolean;
+        }
+
+        const user: User = {
+        id: 1,
+        name: "Ravi",
+        isActive: true,
+        };
+
+
+        Type Aliases
+
+        type Point = { x: number; y: number };
+        const p: Point = { x: 10, y: 20 };
+
+
+
+    4. Classes & OOP
+            
+        class Animal {
+        constructor(public name: string) {}
+
+        speak(): void {
+            console.log(`${this.name} makes a sound`);
+        }
+        }
+
+        class Dog extends Animal {
+        speak(): void {
+            console.log(`${this.name} barks`);
+        }
+        }
+
+        const d = new Dog("Tommy");
+        d.speak();
+
+
+
+    5. Generics
+            
+        function identity<T>(value: T): T {
+        return value;
+        }
+
+        let num = identity<number>(5);
+        let str = identity<string>("hello");
+
+
+
+    6. Advanced Types
+
+        Union & Intersection
+
+        type Status = "success" | "error" | "loading";
+
+        let state: Status = "success";
+
+
+        Intersection
+
+        type A = { name: string };
+        type B = { age: number };
+
+        type Person = A & B;
+
+        const person: Person = { name: "Ravi", age: 25 };
+
+
+
+    7. Utility Types
+        interface Todo {
+        id: number;
+        title: string;
+        completed: boolean;
+        }
+
+        type PartialTodo = Partial<Todo>;   // all fields optional
+        type ReadonlyTodo = Readonly<Todo>; // cannot change values
+        type PickTodo = Pick<Todo, "id" | "title">;
+        type OmitTodo = Omit<Todo, "completed">;
+
+
+
+    8. Modules & Import/Export
+        // math.ts
+        export const add = (a: number, b: number) => a + b;
+
+        // app.ts
+        import { add } from "./math";
+        console.log(add(2, 3));
+
+
+    9. React + TypeScript
+
+        Props
+
+        type ButtonProps = {
+        label: string;
+        onClick: () => void;
+        };
+
+        const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
+        return <button onClick={onClick}>{label}</button>;
+        };
+
+
+        useState + useEffect
+
+        const Counter = () => {
+        const [count, setCount] = React.useState<number>(0);
+
+        return <button onClick={() => setCount(count + 1)}>{count}</button>;
+        };
+
+
+
+    10. Extra Topics
+
+        Type Inference
+
+        Type Assertions (as)
+
+        unknown vs any
+
+        never type
+
+        interface vs type
+
+        Working with APIs (axios + TS)
+
+        React hooks with TS (useReducer, useRef, etc.)

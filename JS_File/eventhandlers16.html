@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventhandlers</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+
+
+  <button id='sj'>Click this</button>                                   <!---- "Click this"  nu button onnu create pannirukom-->
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+ 
+
+<input type="text" id="keyupInput" placeholder="Type here" />
+
+<!---------------------------------------------------------------------------------------------------------------------------------->
+
+   <form id="myForm">
+  <input type="text" placeholder="Name" required />
+  <button type="submit">Submit</button>
+</form> 
+<!----------------------------------------------------------------------------------------------------------------------->
+
+<input type="text" id="inputBox" placeholder="Start typing..." />
+
+</body>
+<script>
+
+
+            //click
+
+    let btn = document.getElementById("sj");
+    btn.addEventListener('click',(event)=>{
+    btn.textContent = "clicked";
+    console.log('clicked');                                             // andha button click panna "clicked" button show aagum.
+    });
+
+
+
+            //mouseOver
+
+    btn.addEventListener('mouseover',(event)=>{
+    btn.textContent = "touching";                                       // andha button just hover pannalae "touching" nu show aagum.
+    console.log('hover');
+    });
+
+     
+
+            // mouseOut
+
+    btn.addEventListener('mouseout',(event)=>{
+    btn.textContent = "click this";                                   // andha button hover panradhu vitta aduthan mouseout nu solvaga.
+    console.log('mouse out');
+    });
+
+     
+
+                // keydown
+
+    btn.addEventListener('keydown',(event)=>{
+    console.log(event.key);
+    switch(event.key){
+        case 'ArrowUp':
+            btn.textContent = Number(btn.textContent)+1;                          // keys ku etha mari value change aagum
+            break;                                                                
+
+        case 'ArrowDown':
+            btn.textContent = Number(btn.textContent)-1;
+            break;
+        
+    }
+    });  
+
+                // keyupInput
+   
+  document.getElementById("keyupInput").addEventListener("keyup", function(e) {
+    console.log("Key up: " + e.key);
+  });
+
+
+
+
+                // submit
+    
+  document.getElementById("myForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent actual form submission
+    alert("Form submitted!");
+  });
+
+
+                    //load
+
+  window.addEventListener("load", function() {
+    console.log("Page fully loaded!");
+  });
+
+
+
+                    //input
+
+  document.getElementById("inputBox").addEventListener("input", function() {
+    console.log("Current value: " + this.value);
+  });
+
+
+</script>
+</html>

@@ -1,0 +1,133 @@
+## 🔰 What is Java?
+
+**Java** is a high-level, **object-oriented**, **platform-independent** programming language. It was developed by **Sun Microsystems** in 1995 (now owned by **Oracle Corporation**). Java is one of the most widely used programming languages in the world.
+
+---
+
+## 💡 Key Features of Java
+
+1. **Simple** – Easy to learn and use.
+2. **Object-Oriented** – Everything is based on objects and classes.
+3. **Platform Independent** – Write once, run anywhere (WORA). Java code runs on any operating system that has the JVM (Java Virtual Machine).
+4. **Secure** – Has built-in security features like bytecode verification and exception handling.
+5. **Robust** – Strong memory management and error handling.
+6. **Multithreaded** – Can run multiple tasks at the same time.
+7. **Portable** – Java programs can be moved from one platform to another easily.
+8. **High Performance** – Faster than traditional interpreted languages, thanks to JIT (Just-In-Time) compiler.
+
+---
+
+## ✅ Example Java Program
+
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+---
+
+## 🛤️ Java Learning Roadmap (Step-by-Step)
+
+### 1. **Java Basics**
+
+* Syntax and structure
+* Variables and Data Types
+* Operators (arithmetic, logical, relational)
+* Control Flow (if, switch, for, while, do-while)
+* Arrays
+
+### 2. **Object-Oriented Programming (OOP) in Java**
+
+* Classes and Objects
+* Constructors
+* Inheritance
+* Polymorphism (Method Overloading and Overriding)
+* Abstraction
+* Encapsulation
+* `this` and `super` keywords
+* Static and Final keywords
+
+### 3. **Core Java**
+
+* Strings and StringBuilder
+* Exception Handling (`try`, `catch`, `finally`, `throw`, `throws`)
+* Java Packages
+* Java Input/Output (File handling using `java.io`)
+* Wrapper Classes
+* Enum Types
+
+### 4. **Collections Framework**
+
+* List (ArrayList, LinkedList)
+* Set (HashSet, TreeSet)
+* Map (HashMap, TreeMap)
+* Iterators and Loops
+
+### 5. **Advanced Java Topics**
+
+* Threads and Multithreading
+* Lambda Expressions (Java 8+)
+* Streams API (Java 8+)
+* Annotations
+* Generics
+
+### 6. **Useful Tools and Concepts**
+
+* Integrated Development Environments (IDEs) like IntelliJ IDEA, Eclipse, NetBeans
+* Maven or Gradle (for dependency management)
+* Debugging and Unit Testing (JUnit)
+
+---
+
+## 📦 Java Editions
+
+1. **Java SE** (Standard Edition) – Core features (used for general programming)
+2. **Java EE** (Enterprise Edition) – Web and enterprise applications (now called Jakarta EE)
+3. **Java ME** (Micro Edition) – For mobile and embedded systems
+4. **JavaFX** – For rich desktop GUI applications
+
+
+
+
+
+Epdi namaku oru program pota onadanae epdi output varudunu pakurom
+
+structure:
+
+program
+code (or)     ---------> Java Compiler  --------> JVM(Java virtual Machine) ------------> Machine Code
+source code
+
+
+working:
+
+1. Indha source code ah namba java compiler ta tharom
+2. Andha compiler byte code aah convert pannudu
+    (eg) (hello_world.java) ---> (hello_world.class)
+3. Andha bytecode different OS java virtual machine la potu run pannikalam
+4. JVM  components are loaded , validator , JIP
+    loaded: program code load panradhu
+    validator:compile time and run time validate panradhu.
+    JIT:Just In Time tha kadaisila machine code aaah convert pannudu
+5. Andha bytecode , JVM vachi machine code convert pannitan.
+
+
+Datatypes:
+        there are two types
+        1.Primitive Datatype
+                        * byte
+                        * short
+                        * int
+                        * long
+                        * float
+                        * double
+                        * boolean
+                        * char
+
+        2.Reference/Data Object Types
+                        * String
+                        * Array
+                        * Class Objects

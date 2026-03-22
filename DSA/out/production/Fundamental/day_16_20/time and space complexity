@@ -1,0 +1,37 @@
+                         Time Complexity
+Time Complexity =
+        👉 Program run aaga evalo time edukkum nu measure pannradhu
+        (based on input size n)
+        💡 Big-O notation use pannitu explain pannuvom.
+        Big-O = Worst case time (maximum time edukkura situation)
+
+   🔹 Why Big-O important?
+           Computer fast / slow nu depend pannadhu
+           Algorithm smart-aa irukka illaya nu depend pannum
+           Interview-la romba important 💼
+
+   🔹 Real Life Example 🚶‍♂️
+          📌 Class-la oru student-a thedra situation
+
+Method 1:
+           Oru oru student-aa check pannradhu
+           👉 Time increases as students increase
+Method 2:
+           Roll number order-la irundha
+           👉 Middle-la check pannalam
+
+   👉 Same problem, different speed → Time Complexity 🔥
+   🔹 Big-O Rules (Easy Memory)
+               1️⃣ Constants ignore pannalam
+               2️⃣ Worst case mattum consider pannalam
+               3️⃣ Growth matter, exact time illa
+
+
+      Order of time complexity : fast to Slow
+               O(1)
+               O(log n)
+               O(n)
+               O(n log n)
+               O(n²)
+               O(2ⁿ)
+               O(n!)

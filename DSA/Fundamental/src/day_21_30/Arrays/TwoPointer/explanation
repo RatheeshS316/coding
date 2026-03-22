@@ -1,0 +1,65 @@
+
+## 🔹 Two Pointer Technique – Simple Definition
+                Two Pointer means:
+
+                Using **two pointers (indices)** to solve a problem in an **array / string / list**.
+
+                👉 Usually:
+
+                * **Left pointer** → starts from the beginning
+                * **Right pointer** → starts from the end (or the next element)
+
+---
+
+## 🔹 Why Two Pointer?
+
+                    **Before:**
+
+                    * Using nested loops → **O(n²)** 😓
+
+                    **After using Two Pointer:**
+
+                    * Using a single loop → **O(n)** 😎
+
+                    👉 It is an **optimization technique**.
+
+---
+
+## 🔹 Types of Two Pointer (Important)
+
+            ### 1️⃣ Opposite Direction Pointers
+
+            ```
+            left  →      ←  right
+            ```
+
+            Used for:
+
+            * Reversing an array
+            * Palindrome check
+            * Finding a pair sum in a **sorted array**
+
+            ---
+
+            ### 2️⃣ Same Direction Pointers (Fast & Slow)
+
+            ```
+            slow → fast →
+            ```
+
+            Used for:
+
+            * Removing duplicates
+            * Sliding window problems
+            * Detecting cycles (linked list)
+
+            ---
+
+## 🔹 Basic Example (Visual)
+
+Array:
+
+```
+[1, 2, 3, 4, 5]
+ L              R
+```

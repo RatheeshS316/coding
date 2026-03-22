@@ -1,0 +1,54 @@
+$padding:5px;
+$margin:5px;
+$border:5px;
+
+
+$utilities:(
+    "padding":(
+        "prefix":"p",
+        "values":(
+            "0":0,
+            "1":$padding*2,
+            "2":$padding*4,
+            "3":$padding*6
+        ),
+    ),
+
+    "margin":(
+        "prefix":"m",
+        "values":(
+            "0":0,
+            "1":$margin*2,
+            "2":$margin*4,
+            "3":$margin*6
+        ),
+    ),
+
+    "border":(
+        "prefix":"b",
+        "values":(
+            "0":0,
+            "1":$border*2,
+            "2":$border*4,
+            "3":$border*6
+        ),
+    ),
+);
+
+
+
+@each $property , $maps in $utilities{
+
+    $prefix:map-get($maps, "prefix" );
+    @debug $prefix;                               // terminal   DEBUG : p  m   b
+    $values : map-get($maps,"values");
+
+    @each $val1 , $val2 in $values{
+        .#{$prefix}-.#{$val1}{
+            #{property}: #{$val2}
+        }
+    }
+}
+
+
+  
