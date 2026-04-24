@@ -11,11 +11,15 @@ public class Array_traversal {
             System.out.println (arr[i]);
         }
 
+
         // search the elements in the array
         int key = 30;
         for (int i =0 ; i<arr.length;i++){
             if(arr[i] == key){
                 System.out.println (arr[i] + " is the key Element.");
+            }
+            else{
+                System.out.println ("key element is not found");
             }
         }
 

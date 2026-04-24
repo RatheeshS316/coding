@@ -20,6 +20,7 @@ public class pratice {
 //        System.out.println (reverse);
 
 
+
         // palindrome
 //      int left =0;
 //      int right = name.length ()-1;
